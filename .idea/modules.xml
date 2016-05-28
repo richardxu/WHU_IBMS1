@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GSUOCM/GSUOCM.iml" filepath="$PROJECT_DIR$/GSUOCM/GSUOCM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WHU_IBMS1.iml" filepath="$PROJECT_DIR$/WHU_IBMS1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lianxi/lianxi.iml" filepath="$PROJECT_DIR$/lianxi/lianxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/suntransfarming/suntransfarming.iml" filepath="$PROJECT_DIR$/suntransfarming/suntransfarming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/suntranswater/suntranswater.iml" filepath="$PROJECT_DIR$/suntranswater/suntranswater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wHU/wHU.iml" filepath="$PROJECT_DIR$/wHU/wHU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xCLCharts/xCLCharts.iml" filepath="$PROJECT_DIR$/xCLCharts/xCLCharts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xCLChartsdemo/xCLChartsdemo.iml" filepath="$PROJECT_DIR$/xCLChartsdemo/xCLChartsdemo.iml" />
+    </modules>
+  </component>
+</project>

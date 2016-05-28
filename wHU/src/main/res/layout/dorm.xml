@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+	<!-- 标题栏 -->
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/bg_action">
+     <ImageView
+         android:layout_width="30dip"
+         android:layout_height="35dip"
+         android:id="@+id/back"       
+         android:layout_gravity="center"
+         android:layout_marginLeft="10dip"
+         android:src="@drawable/bg_back" 
+         android:contentDescription="返回"
+         android:visibility="gone"/>
+     <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:id="@+id/setting"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="15dip"
+        android:layout_gravity="center|left"
+        android:src="@drawable/ic_setting"/>
+     <LinearLayout
+     android:layout_width="0dip"
+     android:layout_height="50dip"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:orientation="horizontal"
+      android:background="@color/bg_action">
+		    <TextView
+		        android:id="@+id/tx_zm"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="@drawable/tab_left_select"
+		        android:textColor="#ffffff"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:text="照明"/>
+		     <TextView
+		        android:id="@+id/tx_kt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="@drawable/tab_right_normal"
+		        android:textColor="#ffffff"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:text="空调"/>
+     </LinearLayout>
+     <View 
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:layout_marginRight="10dip"/>
+    </LinearLayout>
+    
+	 <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        
+        android:persistentDrawingCache="none" />
+	
+</LinearLayout>

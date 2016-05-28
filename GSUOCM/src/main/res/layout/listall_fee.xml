@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_layout_listall" >
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        android:background="@color/bg_color"
+        android:visibility="gone"
+        android:text="标题" />
+     <ImageView
+        android:layout_width="34dip"
+        android:layout_height="34dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dip"
+        android:scaleType="fitCenter"
+        android:id="@+id/image"
+        android:src="@drawable/ic_balance"/>
+    <TextView 
+        android:layout_width="0dip"
+        android:layout_height="42dip"
+        android:layout_weight="2"
+        android:text="已用电费"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dip"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center|left"/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="0元"
+        android:id="@+id/value"
+        android:layout_marginRight="15dip"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:gravity="center|right"/>   
+    
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_action" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:orientation="vertical">
+	     <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dip"
+	        android:gravity="center"
+	        android:textSize="30sp"
+	        android:textColor="@color/white"
+	        android:text="甘肃中医药大学"/>
+	     <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dip"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:textColor="@color/white"
+	        android:text="学生公寓用电管理信息化系统"/>
+     </LinearLayout>
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="2"
+	    />
+	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:scaleType="center"
+        android:src="@drawable/logo_suntrans"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="广州三川控制系统工程设备有限公司"/>
+	
+</LinearLayout>

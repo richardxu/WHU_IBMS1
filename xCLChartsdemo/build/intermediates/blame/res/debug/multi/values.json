@@ -1,0 +1,589 @@
+[
+    {
+        "outputFile": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 80,
+                    "endColumn": 19,
+                    "endOffset": 2411
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\arrays.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 5,
+                        "startOffset": 1898,
+                        "endLine": 161,
+                        "endColumn": 19,
+                        "endOffset": 4254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 2416,
+                    "endLine": 159,
+                    "endColumn": 19,
+                    "endOffset": 4242
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\arrays.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 5,
+                        "startOffset": 61,
+                        "endLine": 81,
+                        "endColumn": 19,
+                        "endOffset": 1887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 4247,
+                    "endLine": 167,
+                    "endColumn": 19,
+                    "endOffset": 4467
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\arrays.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 5,
+                        "startOffset": 4429,
+                        "endLine": 178,
+                        "endColumn": 19,
+                        "endOffset": 4649
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 4472,
+                    "endLine": 173,
+                    "endColumn": 19,
+                    "endOffset": 4634
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\arrays.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 5,
+                        "startOffset": 4660,
+                        "endLine": 185,
+                        "endColumn": 19,
+                        "endOffset": 4822
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 4639,
+                    "endColumn": 57,
+                    "endOffset": 4692
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 89,
+                        "endColumn": 57,
+                        "endOffset": 142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 4697,
+                    "endColumn": 55,
+                    "endOffset": 4748
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 55,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 4753,
+                    "endColumn": 52,
+                    "endOffset": 4801
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 52,
+                        "endOffset": 157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 4806,
+                    "endColumn": 52,
+                    "endOffset": 4854
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 52,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 178,
+                    "startColumn": 4,
+                    "startOffset": 4859,
+                    "endColumn": 52,
+                    "endOffset": 4907
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 52,
+                        "endOffset": 210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 179,
+                    "startColumn": 4,
+                    "startOffset": 4912,
+                    "endColumn": 88,
+                    "endOffset": 4996
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 478,
+                        "endColumn": 88,
+                        "endOffset": 562
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 5001,
+                    "endColumn": 47,
+                    "endOffset": 5044
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 614,
+                        "endColumn": 47,
+                        "endOffset": 657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 5049,
+                    "endColumn": 46,
+                    "endOffset": 5091
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 567,
+                        "endColumn": 46,
+                        "endOffset": 609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 5096,
+                    "endColumn": 62,
+                    "endOffset": 5154
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 62,
+                        "endOffset": 338
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 5159,
+                    "endColumn": 64,
+                    "endOffset": 5219
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 215,
+                        "endColumn": 64,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 5224,
+                    "endColumn": 75,
+                    "endOffset": 5295
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 949,
+                        "endColumn": 75,
+                        "endOffset": 1020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 185,
+                    "startColumn": 4,
+                    "startOffset": 5300,
+                    "endColumn": 75,
+                    "endOffset": 5371
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1099,
+                        "endColumn": 75,
+                        "endOffset": 1170
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 186,
+                    "startColumn": 4,
+                    "startOffset": 5376,
+                    "endColumn": 71,
+                    "endOffset": 5443
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1175,
+                        "endColumn": 71,
+                        "endOffset": 1242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 5448,
+                    "endColumn": 73,
+                    "endOffset": 5517
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1247,
+                        "endColumn": 73,
+                        "endOffset": 1316
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "startOffset": 5522,
+                    "endColumn": 73,
+                    "endOffset": 5591
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1321,
+                        "endColumn": 73,
+                        "endOffset": 1390
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 5596,
+                    "endColumn": 73,
+                    "endOffset": 5665
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1395,
+                        "endColumn": 73,
+                        "endOffset": 1464
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 190,
+                    "startColumn": 4,
+                    "startOffset": 5670,
+                    "endColumn": 61,
+                    "endOffset": 5727
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1469,
+                        "endColumn": 61,
+                        "endOffset": 1526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 191,
+                    "startColumn": 4,
+                    "startOffset": 5732,
+                    "endColumn": 73,
+                    "endOffset": 5801
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1025,
+                        "endColumn": 73,
+                        "endOffset": 1094
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 5806,
+                    "endColumn": 68,
+                    "endOffset": 5870
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 736,
+                        "endColumn": 68,
+                        "endOffset": 800
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 193,
+                    "startColumn": 4,
+                    "startOffset": 5875,
+                    "endColumn": 72,
+                    "endOffset": 5943
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 805,
+                        "endColumn": 72,
+                        "endOffset": 873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 194,
+                    "startColumn": 4,
+                    "startOffset": 5948,
+                    "endColumn": 70,
+                    "endOffset": 6014
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 878,
+                        "endColumn": 70,
+                        "endOffset": 944
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 195,
+                    "startColumn": 4,
+                    "startOffset": 6019,
+                    "endColumn": 73,
+                    "endOffset": 6088
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 662,
+                        "endColumn": 73,
+                        "endOffset": 731
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 196,
+                    "startColumn": 4,
+                    "startOffset": 6093,
+                    "endColumn": 67,
+                    "endOffset": 6156
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 67,
+                        "endOffset": 406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 197,
+                    "startColumn": 4,
+                    "startOffset": 6161,
+                    "endColumn": 66,
+                    "endOffset": 6223
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 66,
+                        "endOffset": 473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 198,
+                    "startColumn": 4,
+                    "startOffset": 6228,
+                    "endLine": 204,
+                    "endColumn": 12,
+                    "endOffset": 6514
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 205,
+                    "startColumn": 4,
+                    "startOffset": 6519,
+                    "endLine": 207,
+                    "endColumn": 12,
+                    "endOffset": 6674
+                },
+                "from": {
+                    "file": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
+                }
+            }
+        ]
+    }
+]

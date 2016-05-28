@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@color/bg_color" >
+     <!-- 标题栏 -->
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/bg_action">
+    <ImageView
+         android:layout_width="30dip"
+         android:layout_height="35dip"
+         android:id="@+id/back"
+         android:layout_gravity="center"
+         android:layout_marginLeft="10dip"
+         android:src="@drawable/bg_back" 
+         android:contentDescription="返回"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="50dip"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:text="权限申请"/>
+   <View 
+       android:layout_width="30dip"
+       android:layout_height="35dip"
+       android:layout_marginRight="10dip"/>
+    </LinearLayout>
+
+	<EditText
+	    android:background="@color/white"
+	    android:layout_marginTop="15dip"
+	    android:paddingTop="5dip"
+	    android:paddingBottom="20dip"     
+	    android:textColor="@color/grey"   
+		android:layout_width="fill_parent"
+		android:layout_height="150dip"		   
+		android:id="@+id/apply"
+		android:gravity="top|left"
+		android:paddingLeft="15dip"	
+		android:paddingRight="15dip"  
+		android:textSize="18sp"  
+		android:hint="请填写申请理由"		
+		
+		/>			       
+	<Button
+	 	android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:id="@+id/submit"
+		android:text="提交申请"
+		android:layout_marginTop="20dip"
+		android:textColor="#ffffff"
+		android:textSize="24sp"
+		android:background="#ff63B8FF"
+		/> 	
+		
+		
+</LinearLayout>

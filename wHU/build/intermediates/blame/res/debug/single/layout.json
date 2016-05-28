@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\title_main.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\title_main.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\threehisdata.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\threehisdata.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_staffinfo.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listmain_staffinfo.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\hisdata.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\hisdata.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\ktfragment.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\ktfragment.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_record.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listsearch_record.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\statedetail.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\statedetail.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\setting.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\setting.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\liststu_stu.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\liststu_stu.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\apply_check.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\apply_check.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_dropdown_item.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listall_stu.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listall_stu.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listall_fee.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listall_fee.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\refresh_root.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\refresh_root.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listsearch_dorm.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\zmfragment.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\zmfragment.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_stu.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listsearch_stu.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_monthpicker.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\dialog_monthpicker.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\dorm.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\statelog.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\statelog.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\list_header.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\list_header.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\welcome.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listhisdata_detail.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listhisdata_detail.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\expense.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\expense.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_userinfo.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listmain_userinfo.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\password.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\password.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\phonenum.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\phonenum.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listall_dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listall_dorm.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listapply_check.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listapply_check.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\apply_insert.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\apply_insert.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_state.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listmain_state.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listmain_dorm.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\search.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\apply_inquiry.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\apply_inquiry.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\stu.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\stu.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listall_general.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listall_general.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\all.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\all.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\liststatelog.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\liststatelog.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\layout\\listexpense_detail.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\layout\\listexpense_detail.xml"
+    }
+]

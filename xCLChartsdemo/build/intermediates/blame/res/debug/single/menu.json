@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\gradient.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\gradient.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\charts.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\charts.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\dial_chart.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\dial_chart.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\about.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\about.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\hlnscroll.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\hlnscroll.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\dial_chart2.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\dial_chart2.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\click_charts.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\click_charts.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\dy_sp.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\dy_sp.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\gauge_chart.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\gauge_chart.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\dial_chart4.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\dial_chart4.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\hbarscroll.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\hbarscroll.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\circle_chart.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\circle_chart.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\seek_bar.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\seek_bar.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\dial_chart3.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\dial_chart3.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\spinner.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\spinner.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\build\\intermediates\\res\\merged\\debug\\menu\\multi_touch.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\xCLChartsdemo\\src\\main\\res\\menu\\multi_touch.xml"
+    }
+]

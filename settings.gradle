@@ -1,0 +1,4 @@
+include ':library', ':suntranswater', ':lianxi', ':suntransfarming', ':sample'
+include ':wHU',':GSUOCM'
+include ':xCLCharts'
+include ':xCLChartsdemo'

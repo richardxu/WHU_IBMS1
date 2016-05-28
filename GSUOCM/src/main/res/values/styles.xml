@@ -1,0 +1,32 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--&lt;!&ndash; Application theme. 系统 主题 &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- Application theme.系统主题 -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!--启动页的主题-->
+    <style name="StartTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!--启动时的默认背景-->
+        <item name="android:windowBackground">@color/bg_action</item>
+    </style>
+    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+   
+ 	
+ 
+</resources>

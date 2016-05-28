@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+   >
+	<!-- 标题栏 -->
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/bg_action">
+    <ImageView
+         android:layout_width="30dip"
+         android:layout_height="35dip"
+         android:id="@+id/back"
+         android:layout_gravity="center"
+         android:layout_marginLeft="10dip"
+         android:src="@drawable/bg_back" 
+         android:contentDescription="返回"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="50dip"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:text="关于"/>
+   
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:orientation="vertical">
+	    <ImageView
+	        android:layout_height="100dip"
+	        android:layout_width="100dip"
+	        android:layout_gravity="center"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/logo_whu"/>
+	     <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dip"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:textColor="@color/grey"
+	        android:text="武汉大学宿舍用电 v1.3"/>
+     </LinearLayout>
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="2"
+	    />
+	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:scaleType="center"
+        android:src="@drawable/logo_suntrans1"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:text="广州三川控制系统工程设备有限公司\n版权所有"/>
+
+	
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--windows背景透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--页面切换动画效果-->
+        <item name="android:windowAnimationStyle">@style/mWindowAnimTheme</item>
+    </style>
+
+    <!--启动页的主题-->
+    <style name="StartTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--启动时的默认背景-->
+        <item name="android:windowBackground">@color/bg_action</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--设置页面切换的动画效果-->
+    <style name="mWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_left</item>
+    </style>
+ 	
+ 
+</resources>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\drawable-xhdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "H:\\shili\\WHU_IBMS1\\wHU\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\drawable-xhdpi-v4\\default_ptr_rotate.png"
+    }
+]

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dip"
+	android:orientation="horizontal"
+    android:background="@drawable/bg_listitem">
+    
+    <ImageView
+        android:layout_width="34dip"
+        android:layout_height="34dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dip"
+        android:scaleType="fitCenter"
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher"/>
+    <TextView 
+        android:layout_width="0dip"
+        android:layout_height="45dip"
+        android:layout_weight="3"
+        android:text="开关状态"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dip"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center|left"/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="28.00元"
+        android:id="@+id/value"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:gravity="center|right"/>
+    <views.Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/state"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="15dip"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_detail"
+        android:id="@+id/detail"/>
+
+</LinearLayout>

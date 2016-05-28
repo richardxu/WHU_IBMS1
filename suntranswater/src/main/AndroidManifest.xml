@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.suntrans.suntranswater">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:screenOrientation="portrait"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Welcome_Activity"
+            android:theme="@style/StartTheme"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login_Activity"
+            android:label="所有站点">
+        </activity>
+        <activity
+            android:name=".All_Activity"
+            android:label="所有站点">
+        </activity>
+        <activity
+            android:name=".Realdata_Activity"
+            android:label="实时数据">
+        </activity>
+        <activity
+            android:name=".Hisdata_Activity"
+            android:label="历史数据">
+        </activity>
+
+        <activity
+            android:name=".Setting_Activity"
+            android:label="设置">
+        </activity>
+
+        <activity
+            android:name=".About_Activity"
+            android:label="关于">
+        </activity>
+        <activity
+            android:name=".Password_Activity"
+            android:label="修改密码">
+        </activity>
+        <activity
+            android:name=".Config_Activity"
+            android:label="站点配置" />
+    </application>
+
+</manifest>

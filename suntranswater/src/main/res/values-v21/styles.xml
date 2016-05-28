@@ -1,0 +1,23 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+       整个系统的主题
+    -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--   your app's branding color (for the app bar) -->
+        <item name="android:colorPrimary">@color/bg_action</item>
+        <!--   darker variant of colorPrimary (for status bar, contextual app bars) -->
+        <item name="android:colorPrimaryDark">@color/bg_action</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/grey</item>
+        <!--windows背景透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--页面切换动画效果-->
+        <item name="android:windowAnimationStyle">@style/mWindowAnimTheme</item>
+
+    </style>
+
+
+ 	
+ 
+</resources>

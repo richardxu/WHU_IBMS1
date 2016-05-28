@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\bg_btn_login.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\drawable-v21\\bg_btn_login.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\bg_layout_listall.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\drawable-v21\\bg_layout_listall.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\bg_back.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\drawable-v21\\bg_back.xml"
+    }
+]

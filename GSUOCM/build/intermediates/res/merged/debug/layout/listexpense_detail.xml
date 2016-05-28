@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+	android:orientation="horizontal"
+    android:background="@drawable/bg_layout_listall">
+    
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="45dip"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip">
+        <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="26dip"	       
+	        android:text="宿舍用电3度"
+	        android:id="@+id/tx_event"
+	        android:textSize="16sp"
+	        android:textColor="@color/black"
+	        android:gravity="bottom|left"/>
+   		 <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="19dip"	       
+	        android:text="2015-02-01 00:00:00"
+	        android:id="@+id/tx_time"
+	        android:paddingBottom="1dip"
+	        android:textColor="@color/grey"
+	        android:textSize="13sp"
+	        android:gravity="bottom|left"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="0dip"
+        android:layout_height="45dip"
+        android:layout_weight="1"
+        android:text="+100.00元"
+        android:id="@+id/tx_fee"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_marginRight="10dip"/>
+    
+
+
+</LinearLayout>

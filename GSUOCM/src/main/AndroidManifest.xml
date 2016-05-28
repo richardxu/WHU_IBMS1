@@ -1,0 +1,104 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suntrans.whu"
+  >
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.RESTART_PACKAGES"/> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize|stateHidden">
+        <activity       
+            android:name="activities.Main_Activity"           
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme"
+            android:label="@string/app_name" >
+            <intent-filter>      <!-- 下面两行设置初始activity -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+       </activity>
+       <activity
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:name="activities.LogIn_Activity"
+            android:label="登录" >
+       </activity>
+       <activity
+            android:name="activities.All_Activity"
+            android:label="所有" >
+       </activity>
+        <activity
+            android:name="activities.AllRoom_Activity"
+            android:label="所有" >
+        </activity>
+       <activity
+            android:name="activities.Setting_Activity"
+            android:label="设置" >
+       </activity>
+       <activity
+            android:name="activities.Search_Activity"
+            android:label="搜索" >
+       </activity>
+        <activity
+            android:name="activities.About_Activity"
+            android:label="关于" >
+       </activity>
+      <activity
+            android:name="activities.Password_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:label="修改密码" >
+       </activity>
+       <activity
+            android:name="activities.PhoneNum_Activity"
+            android:label="修改手机号" >
+       </activity>
+       <activity
+            android:name="activities.Dorm_Activity"
+            android:label="宿舍页面" >
+        </activity>
+       <activity       
+            android:name="activities.Stu_Activity"
+            android:label="学生页面" >
+        </activity>
+        <activity       
+            android:name="activities.Inquiryapply_Activity"
+            android:label="查看申请" >
+        </activity>
+        <activity       
+            android:name="activities.Insertapply_Activity"
+            android:label="权限申请" >
+        </activity>
+         <activity       
+            android:name="activities.StateLog_Activity"
+            android:hardwareAccelerated="false"
+            android:label="状态日志" >
+        </activity>
+        <activity       
+            android:name="activities.Expense_Activity"
+            android:hardwareAccelerated="false"
+            android:label="资费记录" >
+        </activity>
+        <activity       
+            android:name="activities.HisData_Activity"
+            android:hardwareAccelerated="false"           
+            android:label="电量历史记录" >
+        </activity>
+        <activity
+            android:name="activities.ThreeData_Activity"
+            android:label="三相电状态" >
+        </activity>
+         <activity
+            android:name="activities.ThreeHisData_Activity"
+            android:hardwareAccelerated="false"           
+            android:label="电量历史记录" >
+        </activity>
+         <activity
+            android:name="activities.StateDetail_Activity"
+            android:label="详细信息" >
+       </activity>
+    </application>
+
+</manifest>
