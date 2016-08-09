@@ -2167,7 +2167,7 @@ containing a value of this type.
         public static final int tx_event=0x7f0b008a;
         public static final int tx_fee=0x7f0b008c;
         public static final int tx_general=0x7f0b0061;
-        public static final int tx_recharge=0x7f0b0075;
+        public static final int tx_recharge=0x7f0b0074;
         public static final int tx_stu=0x7f0b0060;
         public static final int tx_time=0x7f0b008b;
         public static final int tx_title=0x7f0b00c0;
@@ -2176,7 +2176,7 @@ containing a value of this type.
         public static final int update=0x7f0b00b6;
         public static final int useLogo=0x7f0b0016;
         public static final int userid=0x7f0b00a2;
-        public static final int vPager=0x7f0b0074;
+        public static final int vPager=0x7f0b0075;
         public static final int value=0x7f0b0089;
         public static final int version=0x7f0b00b8;
         public static final int webview=0x7f0b000c;

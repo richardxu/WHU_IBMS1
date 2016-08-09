@@ -4,40 +4,40 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\allroom.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\apply_check.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\apply_check.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\apply_check.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\apply_check.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\expense.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\expense.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\search.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\expense.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\expense.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\setting.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\setting.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\dorm.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\ktfragment.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\ktfragment.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\dorm.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\dorm.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\list_header.xml",
@@ -52,12 +52,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_userinfo.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_userinfo.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\phonenum.xml",
@@ -76,12 +76,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
@@ -92,36 +92,36 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_staffinfo.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_record.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listsearch_record.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\stu.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\stu.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listexpense_detail.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listexpense_detail.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_action.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\welcome.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\title_main.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\title_main.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\welcome.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\welcome.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -136,12 +136,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listhisdata_detail.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listhisdata_detail.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listhisdata_detail.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listhisdata_detail.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_monthpicker.xml",
@@ -160,16 +160,16 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listall_stu.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listall_stu.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\statelog.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\statelog.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\liststatelog.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\liststatelog.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\statelog.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\statelog.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listall_stu.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listall_stu.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_stu.xml",
@@ -180,12 +180,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_dorm.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_dorm.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_dorm.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_dorm.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\threehisdata.xml",
@@ -240,12 +240,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listall_fee.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listsearch_dorm.xml",
@@ -280,20 +280,20 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listall_general.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\about.xml"
-    },
-    {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\spinner_item.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_state.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_state.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\refresh_root.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\refresh_root.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\listmain_state.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\listmain_state.xml"
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\about.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
@@ -320,12 +320,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\threedata.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\threedata.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\threedata.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\src\\main\\res\\layout\\threedata.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

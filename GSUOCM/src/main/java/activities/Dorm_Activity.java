@@ -17,6 +17,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,6 +43,7 @@ import android.widget.TextView;
 import com.suntrans.whu.R;
 
 public class Dorm_Activity extends AppCompatActivity implements Serializable{
+	private TextView tx_recharge;   //充值缴费
 	private String UserID=""; // 管理员账号
 	private String StudentID="";   //学号
 	private String Role="";    //角色号
@@ -79,6 +81,7 @@ public class Dorm_Activity extends AppCompatActivity implements Serializable{
 		RoomType=intent.getStringExtra("RoomType");  //房间类型:0学生宿舍
 		RoomInfo = intent.getStringExtra("RoomInfo"); ///房间详情
 		tx_zm=(TextView)findViewById(R.id.tx_zm);   //照明
+		tx_recharge=(TextView)findViewById(R.id.tx_recharge);     //充值缴费
 		back=(LinearLayout)findViewById(R.id.layout_back);     //返回键
 		setting=(LinearLayout)findViewById(R.id.layout_setting);    //设置键
 		vPager=(ViewPager)findViewById(R.id.vPager);
@@ -109,6 +112,28 @@ public class Dorm_Activity extends AppCompatActivity implements Serializable{
 				
 			}			
 		});
+		//充值缴费
+		tx_recharge.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				new Thread(){
+					@Override
+					public void run(){
+						Intent intent = new Intent();
+						SoapObject result = soap.Inquiry_Version("ReCharge");
+
+						ArrayList<Map<String,String>> data= jiexi.inquiry_version(result);
+						String sUrl=data.get(0).get("URL");	   //获取充值地址
+						intent.setData(Uri.parse(sUrl));
+						intent.setAction(Intent.ACTION_VIEW);
+						//intent.setClassName("com.android.browser","com.android.browser.BrowserActivity");  //设置打开的浏览器
+						//注释掉上面一行，则选择系统默认浏览器打开
+						startActivity(intent);
+					}
+				}.start();
+
+
+			}});
 		back.setOnClickListener(new OnClickListener(){   //返回键监听
 			@Override
 			public void onClick(View v) {

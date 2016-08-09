@@ -52,6 +52,7 @@ public class Search_Activity extends Activity {
 	private LinearLayout layout1,layout2;  //无搜索结果。加载中...
 	private String[] search_item={"所有","宿舍号","学号","姓名"};
 	private String Role;       //角色号
+	private String UserID;  //管理员账号
 	private ArrayList<Map<String,String>> datalist_userinfo=new ArrayList<Map<String,String>>();  //管理者信息
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class Search_Activity extends Activity {
 		setContentView(R.layout.search);      //设置activity布局文件
 		Intent intent=getIntent();
 		Role=intent.getStringExtra("Role");
+		UserID = intent.getStringExtra("UserID");
 		datalist_userinfo=(ArrayList<Map<String, String>>)intent.getSerializableExtra("datalist_userinfo");
 		inputbox=(InputBox)findViewById(R.id.inputbox);  //输入框
 		cancel=(TextView)findViewById(R.id.cancel);  //取消
@@ -246,11 +248,11 @@ public class Search_Activity extends Activity {
 	    	  	case 0:   //所有
 	    	  	{
 	    	  		if(Role.equals("5"))      //楼长   ,先从房间表里选
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ? and Area=? and Building=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building")}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ? and Area=? and Building=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building")}, null, null, null);
 	    	  		else if(Role.equals("6"))    //宿管
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ? and Area=? and Building=? and Unit=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building"),datalist_userinfo.get(0).get("Unit").replace("anyType{}", "")}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ? and Area=? and Building=? and Unit=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building"),datalist_userinfo.get(0).get("Unit").replace("anyType{}", "")}, null, null, null);
 	    	  		else	      //中心管理员或其他可以查看全校宿舍的管理员	  			
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ?", new String[]{"%"+content+"%"}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ?", new String[]{"%"+content+"%"}, null, null, null);
 	    	  		if(cursor.getCount()>=1)
 	    	  		{
 	    	  			while(cursor.moveToNext())
@@ -260,7 +262,8 @@ public class Search_Activity extends Activity {
 		    	  			map.put("RoomID", cursor.getString(0));   
 	 	    	  			map.put("Name",cursor.getString(4));   //房间号
 	 	    	  			map.put("StudentID", "");
-		    	  			map.put("RoomInfo",cursor.getString(1)+"-"+cursor.getString(2)+cursor.getString(3));
+							map.put("RoomType", cursor.getString(5));  //房间类型
+							map.put("RoomInfo",cursor.getString(1)+"-"+cursor.getString(2)+cursor.getString(3));
 		    	  			data_room.add(map);
 	    	  			}
 	    	  		}
@@ -288,11 +291,11 @@ public class Search_Activity extends Activity {
 	    	  	case 1:    //宿舍号
 	    	  	{
 	    	  		if(Role.equals("5"))      //楼长
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ? and Area=? and Building=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building")}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ? and Area=? and Building=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building")}, null, null, null);
 	    	  		else if(Role.equals("6"))    //宿管
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ? and Area=? and Building=? and Unit=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building"),datalist_userinfo.get(0).get("Unit").replace("anyType{}", "")}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ? and Area=? and Building=? and Unit=?", new String[]{"%"+content+"%",datalist_userinfo.get(0).get("Area"),datalist_userinfo.get(0).get("Building"),datalist_userinfo.get(0).get("Unit").replace("anyType{}", "")}, null, null, null);
 	    	  		else	      //中心管理员或其他可以查看全校宿舍的管理员	  			
-	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum"}, "RoomNum like ?", new String[]{"%"+content+"%"}, null, null, null);
+	    	  			cursor=db.query("room_tb", new String[]{"RoomID","Area","Building","Unit","RoomNum","RoomType"}, "RoomNum like ?", new String[]{"%"+content+"%"}, null, null, null);
 	    	  		if(cursor.getCount()>=1)
 	    	  		{
 	    	  			while(cursor.moveToNext())
@@ -302,6 +305,7 @@ public class Search_Activity extends Activity {
 		    	  			map.put("RoomID", cursor.getString(0));   
 	 	    	  			map.put("Name",cursor.getString(4));   //房间号
 	 	    	  			map.put("StudentID", "");
+							map.put("RoomType",cursor.getString(5));   //房间类型
 		    	  			map.put("RoomInfo",cursor.getString(1)+"-"+cursor.getString(2)+cursor.getString(3));
 		    	  			data_room.add(map);
 	    	  			}
@@ -385,27 +389,35 @@ public class Search_Activity extends Activity {
 						name.setText(map.get("Name"));
 						studentid.setText(map.get("StudentID"));
 						roominfo.setText(map.get("RoomInfo"));
+						String RoomType = map.get("RoomType");
 						//选项选择监听
 						convertView.setOnClickListener(new OnClickListener(){
 							@Override
 							public void onClick(View v) {
 								// TODO Auto-generated method stub
-								Cursor cursor=db.query("student_tb", new String[]{"StudentID"}, "RoomID=?", new String[]{map.get("RoomID")}, null, null, null);
-								if(cursor.getCount()>0)//如果学号存在就跳转
-									while(cursor.moveToNext())
-									{
+								//Cursor cursor=db.query("student_tb", new String[]{"StudentID"}, "RoomID=?", new String[]{map.get("RoomID")}, null, null, null);
+//								if(cursor.getCount()>0)//如果学号存在就跳转
+//									while(cursor.moveToNext())
+//									{
+										DbHelper dh2=new DbHelper(Search_Activity.this,"IBMS",null,2);
+										SQLiteDatabase db1 = dh2.getReadableDatabase();
 										ContentValues cv=new ContentValues();
 										cv.put("Name", inputbox.getText().toString());
-										long a=db.insert("search_tb", null, cv);
+										long a=db1.insert("search_tb", null, cv);
+										db1.close();
 										Intent intent=new Intent();				        		
-						        		intent.putExtra("StudentID", cursor.getString(0));       //学号  
-						        		intent.putExtra("Role", Role);       //角色号  
+						        		//intent.putExtra("StudentID", cursor.getString(0));       //学号
+						        		intent.putExtra("Role", Role);       //角色号
+										intent.putExtra("RoomInfo",map.get("RoomInfo")+"-"+map.get("Name"));
+										intent.putExtra("RoomType", map.get("RoomType"));
+										intent.putExtra("RoomID", map.get("RoomID"));
+										intent.putExtra("UserID", UserID);
 										intent.setClass(Search_Activity.this, Dorm_Activity.class);//设置要跳转的activity
 										startActivity(intent);//开始跳转	
 										overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);//设置activity切换效果	
-										
-										break;
-									}
+										finish();
+									//	break;
+									//}
 							}});
 						return convertView;
 					}});
@@ -443,9 +455,12 @@ public class Search_Activity extends Activity {
 							@Override
 							public void onClick(View v) {
 								// TODO Auto-generated method stub
+								DbHelper dh2=new DbHelper(Search_Activity.this,"IBMS",null,2);
+								SQLiteDatabase db1 = dh2.getReadableDatabase();
 								ContentValues cv=new ContentValues();
 								cv.put("Name", inputbox.getText().toString());
-								long a=db.insert("search_tb", null, cv);
+								long a=db1.insert("search_tb", null, cv);
+								db1.close();
 								Intent intent=new Intent();
 								intent.putExtra("Name", map.get("Name"));       //学生姓名
 					        	intent.putExtra("RoomID", map.get("RoomID"));       //宿舍ID
@@ -453,7 +468,7 @@ public class Search_Activity extends Activity {
 								intent.setClass(Search_Activity.this, Stu_Activity.class);//设置要跳转的activity
 								startActivity(intent);//开始跳转	
 								overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);//设置activity切换效果	
-								
+								finish();
 							}});
 						return convertView;
 					}});
@@ -473,6 +488,6 @@ public class Search_Activity extends Activity {
 					layout2.setVisibility(View.GONE);
 				}
   		  }
-    	  
+    	 db.close();
       }
 }

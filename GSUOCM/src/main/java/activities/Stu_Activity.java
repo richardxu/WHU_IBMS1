@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.ksoap2.serialization.SoapObject;
 
+import convert.Converts;
 import views.ZMFragment.MainThread;
 
 import Adapter.SectionListAdapter;
@@ -16,6 +17,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -97,7 +99,11 @@ public class Stu_Activity extends AppCompatActivity {
 					new MainThread().start();    //开始新的刷新线程
 				}});
 	   MainThread mainThread=new MainThread();
-	   mainThread.start();		
+	   mainThread.start();
+		//设置通知栏半透明
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			Converts.setTranslucentStatus(Stu_Activity.this,true);
+		}
 		//ListInit();
 	}
 	

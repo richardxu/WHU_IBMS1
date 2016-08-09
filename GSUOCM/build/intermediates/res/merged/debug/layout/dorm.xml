@@ -72,10 +72,15 @@
 					android:text="照明"/>
 
 		 </LinearLayout>
-		 <View
-			 android:layout_width="50dip"
-			 android:layout_height="30dip"
-			 android:layout_marginRight="10dip"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="充值缴费"
+			android:textColor="@color/white"
+			android:textSize="15sp"
+			android:id="@+id/tx_recharge"
+			android:gravity="center"
+			android:layout_marginRight="5dip"/>
     </LinearLayout>
 
 	 <android.support.v4.view.ViewPager
@@ -84,7 +89,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:flipInterval="30"
-
+		android:background="@color/bg_color"
         android:persistentDrawingCache="none" />
 	
 </LinearLayout>

@@ -885,7 +885,7 @@ int id tx_dorm 0x7f0b005f
 int id tx_event 0x7f0b008a
 int id tx_fee 0x7f0b008c
 int id tx_general 0x7f0b0061
-int id tx_recharge 0x7f0b0075
+int id tx_recharge 0x7f0b0074
 int id tx_stu 0x7f0b0060
 int id tx_time 0x7f0b008b
 int id tx_title 0x7f0b00c0
@@ -894,7 +894,7 @@ int id up 0x7f0b000b
 int id update 0x7f0b00b6
 int id useLogo 0x7f0b0016
 int id userid 0x7f0b00a2
-int id vPager 0x7f0b0074
+int id vPager 0x7f0b0075
 int id value 0x7f0b0089
 int id version 0x7f0b00b8
 int id webview 0x7f0b000c

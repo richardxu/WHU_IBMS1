@@ -3,8 +3,11 @@ package activities;
 import com.suntrans.whu.R;
 
 import Adapter.TouchListener;
+import convert.Converts;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class StateDetail_Activity extends Activity {
+public class StateDetail_Activity extends AppCompatActivity {
 	
 	private TextView content;
 	private String Content;
@@ -38,6 +41,10 @@ public class StateDetail_Activity extends Activity {
 				finish();
 				overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
 			}});
+		//设置通知栏半透明
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			Converts.setTranslucentStatus(StateDetail_Activity.this,true);
+		}
 	}
 		
 }

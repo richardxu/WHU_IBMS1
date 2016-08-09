@@ -4,12 +4,12 @@
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
-        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\anim\\slide_in_from_top.xml"
-    },
-    {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\exploded-aar\\WHU_IBMS1\\library\\unspecified\\res\\anim\\slide_in_from_top.xml"
     },
     {
         "merged": "H:\\shili\\WHU_IBMS1\\GSUOCM\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",

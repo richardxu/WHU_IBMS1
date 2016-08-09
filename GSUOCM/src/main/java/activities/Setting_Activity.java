@@ -216,7 +216,7 @@ public class Setting_Activity extends Activity {
 					new Thread(){
 						public void run(){    //访问最新版本信息
 							try{
-								SoapObject result=soap.Inquiry_Version();
+								SoapObject result=soap.Inquiry_Version("Android");
 								datalist_version=jiexi.inquiry_version(result);
 								Message msg=new Message();
 								msg.what=1;   //成功
@@ -275,7 +275,7 @@ public class Setting_Activity extends Activity {
 	public class MainThread extends Thread{
 		public void run(){    //访问最新版本信息
 			try{
-				SoapObject result=soap.Inquiry_Version();
+				SoapObject result=soap.Inquiry_Version("Android");
 				datalist_version=jiexi.inquiry_version(result);
 				Message msg=new Message();
 				msg.what=1;   //成功

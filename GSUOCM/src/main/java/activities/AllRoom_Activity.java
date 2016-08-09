@@ -40,6 +40,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.Vector;
 
 import Adapter.RecyclerViewDivider;
 import Adapter.TouchListener;
@@ -82,8 +83,10 @@ public class AllRoom_Activity extends AppCompatActivity {
     private ArrayList<Map<String,String>> datalist_stu=new ArrayList<Map<String,String>>();   //所有学生
     private ArrayList<Map<String,String>> datalist_userinfo=new ArrayList<Map<String,String>>(); //管理员信息
     private ArrayList<Map<String,String>> datalist_roomdetail=new ArrayList<Map<String,String>>();//存放开关状态的所有房间
+    private ArrayList<Map<String,String>> datalist_roomdetail_refresh=new ArrayList<Map<String,String>>();//刷新时使用的存放开关状态的所有房间，刷新完毕后赋值给datalist_roomdetail
     private ArrayList<Map<String,String>> datalist_general=new ArrayList<Map<String,String>>();//存放综合信息
-    private ArrayList<Map<String,String>> data_dorm=new ArrayList<>();   //单个页面显示的房间信息
+    private Vector<Map<String,String>> data_dorm=new Vector<>();   //单个页面显示的房间信息
+    private Vector<Map<String, String>> data_dorm1 = new Vector<>();
     private ArrayList<Map<String,String>> data_stu=new ArrayList<>();   //单个页面显示的学生信息
     private ArrayList<Map<String,String>> data_general=new ArrayList<>();   //显示的综合信息
     private Handler handler1=new Handler() {
@@ -397,6 +400,7 @@ public class AllRoom_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent=new Intent();
+                intent.putExtra("UserID", UserID);   //管理员账号
                 intent.putExtra("Role", Role);  //管理员角色
                 intent.putExtra("datalist_userinfo", (Serializable)datalist_userinfo);
                 intent.setClass(AllRoom_Activity.this,Search_Activity.class);		//跳转到搜索页面
@@ -565,6 +569,12 @@ public class AllRoom_Activity extends AppCompatActivity {
 
             }});
         new MainThread().start();   //开始新线程查询宿舍和学生的具体信息
+        try {
+            String IPAddr = Converts.getLocalIPAddress();
+            Log.i("IPAddr", IPAddr);
+
+        }
+        catch(Exception e){}
     }
 
     @Override
@@ -739,14 +749,14 @@ public class AllRoom_Activity extends AppCompatActivity {
         public void run(){
             IfRefreshOn=true;  //表示刷新线程已经开启
             try{
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             }
             catch(Exception e){
                 e.printStackTrace();
             }
             while(IfRefresh){
                 try{
-                    Thread.sleep(3000);
+                    Thread.sleep(2000);
                 }
                 catch(Exception e){
                     e.printStackTrace();
@@ -754,40 +764,42 @@ public class AllRoom_Activity extends AppCompatActivity {
                 if(IsFinish==1){
                     Log.i("Thread","all开始刷新");
                     try {
+                        datalist_roomdetail_refresh.clear();
+                        for(String key:map_building.keySet()) {   //所有园区
+                            String[] temp_building = map_building.get(key).split(";");
+                            for (int i = 0; i < temp_building.length; i++) {       //所有楼栋单元
+
+                                result1 = soap.Inquiry_Building_Detail(key, temp_building[i], "");
+                                data1 = jiexi.inquiry_building_detail(result1);   //获取本楼栋所有房间的具体信息
+                                datalist_roomdetail_refresh.addAll(data1);
+
+                            }
+                        }
                         synchronized (datalist_roomdetail){  //同步datalist_roomdetail数据
-                            datalist_roomdetail.clear();
-                            for(String key:map_building.keySet()) {   //所有园区
-                                String[] temp_building = map_building.get(key).split(";");
-                                for (int i = 0; i < temp_building.length; i++) {       //所有楼栋单元
-
-                                        result1 = soap.Inquiry_Building_Detail(key, temp_building[i], "");
-                                        data1 = jiexi.inquiry_building_detail(result1);   //获取本楼栋所有房间的具体信息
-                                        datalist_roomdetail.addAll(data1);
-
-                                }
-                            }
-                        }
-                        if(IsShowing.equals("宿舍")) {
-                            synchronized (data_dorm) {
-                                data_dorm.clear();
-                                int len = datalist_roomdetail.size();
-                                if (spinner_floor.getSelectedItem().toString().equals("所有")) {
-                                    for (int k = 0; k < len; k++) {
-                                        Map<String, String> map = datalist_roomdetail.get(k);
-                                        if (map.get("Area").equals(spinner_area.getSelectedItem().toString()) && (map.get("Building") + map.get("Unit")).equals(spinner_building.getSelectedItem().toString()))
-                                            data_dorm.add(map);
+                           datalist_roomdetail=(ArrayList<Map<String,String>>) datalist_roomdetail_refresh.clone();
+                            if(IsShowing.equals("宿舍")) {
+                                    data_dorm1.clear();
+                                    int len = datalist_roomdetail.size();
+                                    if (spinner_floor.getSelectedItem().toString().equals("所有")) {
+                                        for (int k = 0; k < len; k++) {
+                                            Map<String, String> map = datalist_roomdetail.get(k);
+                                            if (map.get("Area").equals(spinner_area.getSelectedItem().toString()) && (map.get("Building") + map.get("Unit")).equals(spinner_building.getSelectedItem().toString()))
+                                                data_dorm1.add(map);
+                                        }
+                                    } else {
+                                        for (int k = 0; k < len; k++) {
+                                            Map<String, String> map = datalist_roomdetail.get(k);
+                                            if (map.get("Area").equals(spinner_area.getSelectedItem().toString()) && (map.get("Building") + map.get("Unit")).equals(spinner_building.getSelectedItem().toString()) && (map.get("Floor") + ("层")).equals(spinner_floor.getSelectedItem().toString()))
+                                                data_dorm1.add(map);
+                                        }
                                     }
-                                } else {
-                                    for (int k = 0; k < len; k++) {
-                                        Map<String, String> map = datalist_roomdetail.get(k);
-                                        if (map.get("Area").equals(spinner_area.getSelectedItem().toString()) && (map.get("Building") + map.get("Unit")).equals(spinner_building.getSelectedItem().toString()) && (map.get("Floor") + ("层")).equals(spinner_floor.getSelectedItem().toString()))
-                                            data_dorm.add(map);
-                                    }
-                                }
-                            }
+                                data_dorm=(Vector<Map<String,String>>) data_dorm1.clone();
                                 handler3.sendEmptyMessage(1);
+                            }
+
 
                         }
+
                     }
                     catch(Exception e){
                         Log.i("Thread", e.toString());
@@ -921,33 +933,39 @@ public class AllRoom_Activity extends AppCompatActivity {
             {
                 if(Role.equals("5"))  //如果是楼长，则本楼栋可能有单元
                 {
-                    //楼栋单元
+                    //先选出对应的楼栋单元
+
+                    map_building1.clear();
                     for(int i=0;i<len;i++)
                     {
-                        Map<String,String> map2=datalist_room.get(i);
-                        if(map2.get("Area").equals(area[0])&&map2.get("Building").equals(Building))   //默认显示第一行，所以找园区为第一行的楼栋单元
+                        Map<String,String> map=datalist_room.get(i);
+                        if(map.get("Area").equals(area[0]))   //默认显示第一行，所以找园区为第一行的楼栋单元
                         {
-                            map_building.put(map2.get("Building")+map2.get("Unit"),"");//有单元号，就存楼栋和单元
+                            map_building1.put(map.get("Building")+map.get("Unit"),"");//有单元号，就存楼栋和单元
                         }
                     }
-                    building=new String[map_building.size()];
-                    int j=0;
-                    for(String key : map_building.keySet())
+
+                    String str_building="";
+                    for(String key : map_building1.keySet())
                     {
-                        building[j]=key;
-                        j++;
+                        str_building+=key+";";    //给楼栋数组赋值
                     }
+                    map_building.put(area[0],str_building);
+                    building = map_building.get(area[0]).split(";");   //当前园区的所有楼栋
+
                 }
-                else   //如果有单元号，则表明是宿管，只能看这个单元
+                else   //如果是宿管，只能看这个单元
                 {
                     building=new String[1];
-                    building[0]=Building;
+                    building[0]=Building+Unit;
+                    map_building.put(area[0], building[0]);
                 }
             }
             else    //如果宿管信息中有单元号，则确定楼栋单元，管理员是宿管
             {
                 building=new String[1];
                 building[0]=Building+Unit;
+                map_building.put(area[0], building[0]);
             }
             for(int y=0;y<building.length;y++){
                 map_floor.clear();
@@ -1244,6 +1262,7 @@ public class AllRoom_Activity extends AppCompatActivity {
                     data_general.add(map8);
                 }
             } else {
+                data_general.clear();
                 if (datalist_general.size() > 0)   //用电量信息
                 {
                     Map<String, String> map_general = datalist_general.get(0); //存放三相电表当前状态信息
@@ -1419,6 +1438,10 @@ public class AllRoom_Activity extends AppCompatActivity {
                         viewholder.zm_state.setState(false);
                     viewholder.layout_state.setVisibility(View.VISIBLE);
                     viewholder.layout_status.setVisibility(View.VISIBLE);
+                    if(Role.equals("3")){
+                        viewholder.zm_state.setEnabled(false);    //如果角色号是3，则为系统观察员，不允许控制
+
+                    }
                 }
                 else {   //卫生间或者活动室等
                     viewholder.layout_state.setVisibility(View.GONE);

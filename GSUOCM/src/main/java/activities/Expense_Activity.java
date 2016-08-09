@@ -55,7 +55,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Expense_Activity extends AppCompatActivity {
-	private TextView title,tx_recharge;    //标题,充值缴费
+	private TextView title;    //标题
 	private TextView expend,recharge;   //消费总计和充值总计
 	private LinearLayout layout_loading,layout_failure;   //加载中。。；加载失败。
 	private LinearLayout back;     //返回键
@@ -102,7 +102,7 @@ public class Expense_Activity extends AppCompatActivity {
 		RoomNum = intent.getStringExtra("RoomNum");
 		//实例化控件
 		title=(TextView)findViewById(R.id.title);     //标题
-		tx_recharge=(TextView)findViewById(R.id.tx_recharge);     //充值缴费
+
 		back=(LinearLayout)findViewById(R.id.layout_back);     //返回键
 		layout_time=(LinearLayout)findViewById(R.id.layout_time);   //时间选择区域
 		layout_loading=(LinearLayout)findViewById(R.id.layout_loading);  //加载中
@@ -124,19 +124,7 @@ public class Expense_Activity extends AppCompatActivity {
 		bt1.setOnTouchListener(new TouchListener());
 		bt2.setOnTouchListener(new TouchListener());
 		bt3.setOnTouchListener(new TouchListener());
-		//充值缴费
-		tx_recharge.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent();
-				String sUrl="http://10.100.0.4:8001/";	   //充值地址
-				intent.setData(Uri.parse(sUrl));
-				intent.setAction(Intent.ACTION_VIEW);
-				//intent.setClassName("com.android.browser","com.android.browser.BrowserActivity");  //设置打开的浏览器 
-				//注释掉上面一行，则选择系统默认浏览器打开
-				startActivity(intent);
-			}});
+
 		//用电记录
 		bt1.setOnClickListener(new OnClickListener(){
 			@Override

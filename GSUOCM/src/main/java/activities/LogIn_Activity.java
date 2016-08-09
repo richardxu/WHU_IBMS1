@@ -18,6 +18,7 @@ import WebServices.soap;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
@@ -84,7 +85,7 @@ public class LogIn_Activity extends Activity implements Serializable{
 						db.update("users_tb",cv,"Name=?",new String[]{name.getText().toString()});   //更新用户表数据									
 					}
 				}
-	            if(Role.equals("1")||Role.equals("2"))     //用户是学生，跳转到宿舍页面
+	            if(Role.equals("1")||Role.equals("2"))     //用户是学生，跳转到宿舍页面，同时将所有宿舍和所有学生的数据清空
 	            {	            		    
 	            	new Thread(){
 	            		public void run(){
@@ -161,7 +162,8 @@ public class LogIn_Activity extends Activity implements Serializable{
 									cv.put("Building",map.get("Building"));   //楼栋
 									cv.put("Unit",map.get("Unit"));   //单元 
 									cv.put("Floor",map.get("Floor"));   //楼层
-									cv.put("RoomNum",map.get("RoomNum"));   //宿舍号     
+									cv.put("RoomNum",map.get("RoomNum"));   //宿舍号
+									cv.put("RoomType",map.get("RoomType"));   //宿舍类型
 									a=db1.insert("room_tb", null, cv);    //插入到宿舍表中	
 									
 				        		}
@@ -185,7 +187,12 @@ public class LogIn_Activity extends Activity implements Serializable{
 				        		}
 				        		db1.setTransactionSuccessful();       //设置事务处理成功，不设置会自动回滚不提交
 				    			db1.endTransaction();       //处理完成
-				    			db1.close();				    		
+				    			db1.close();
+								long time=System.currentTimeMillis();  //1970年1月1日到现在的毫秒数
+								SharedPreferences sp =getSharedPreferences("UpdateTime", MODE_PRIVATE);
+								SharedPreferences.Editor editor=sp.edit();
+								editor.putLong("GetTime", time);
+								editor.commit();
 		            		}
 		            	}.start();
 	            	}

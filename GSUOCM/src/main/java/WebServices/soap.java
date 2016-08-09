@@ -976,7 +976,7 @@ public class soap {
 		}					
 		
 		//22.调用Inquiry_Version方法(查看最新版本号)    的soap通讯静态方法   返回一个soapobject对象，存放信息
-		public static SoapObject Inquiry_Version()
+		public static SoapObject Inquiry_Version(String Type)
 		{ 
 
 			//方法名
@@ -987,7 +987,7 @@ public class soap {
 			  HttpTransportSE ht =new HttpTransportSE(URL,5000);    //设置访问地址，第二个参数是设置超时的毫秒数
 			 ht.debug =true;  
 			 SoapSerializationEnvelope envelope =new SoapSerializationEnvelope(SoapEnvelope.VER11);
-			 rpc.addProperty("Type", "Android");    //类型，Android	
+			 rpc.addProperty("Type", Type);    //类型，Android是请求最新版本，ReCharge是请求充值链接
 			 envelope.bodyOut = rpc;  
 			 envelope.dotNet =true;  
 			 envelope.setOutputSoapObject(rpc);  
@@ -1115,5 +1115,40 @@ public class soap {
 			}      //result是服务器返回的数据  形式为SoapObject对象
 			return result;   //返回result
 		}
+
+	//26.调用Insert_Order方法（插入控制命令）2表示打开，3表示关闭    的soap通讯静态方法   返回一个字符串，存放修改结果
+	public static String Insert_Order(String StudentID,String AccountType,String OrderID)
+	{
+
+		//方法名
+		final String METHOD_NAME ="Insert_Order";
+		final String SOAP_ACTION ="http://www.suntrans.net/Insert_Order";
+		//SoapObject detail;
+		SoapObject rpc =new SoapObject(NAMESPACE, METHOD_NAME);
+		HttpTransportSE ht =new HttpTransportSE(URL,5000);    //设置访问地址，第二个参数是设置超时的毫秒数
+		ht.debug =true;
+		SoapSerializationEnvelope envelope =new SoapSerializationEnvelope(SoapEnvelope.VER11);
+		rpc.addProperty("StudentID", StudentID);    //学号
+		rpc.addProperty("AccountType", AccountType);    //账户类型
+		rpc.addProperty("OrderID",OrderID);  //命令，2表示打开，3表示关闭
+		envelope.bodyOut = rpc;
+		envelope.dotNet =true;
+		envelope.setOutputSoapObject(rpc);
+		try {
+			ht.call(SOAP_ACTION, envelope);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		Object result = null;
+
+		try {
+			result = envelope.getResponse();
+		} catch (SoapFault e) {
+			// TODO Auto-generated catch block
+
+		}      //result是服务器返回的数据  形式为SoapObject对象
+		return result.toString();   //返回result
+	}
 }
 	 

@@ -596,7 +596,7 @@ public class jiexi {
 			    try{map.put("ActivePower", soap.getProperty("ActivePower").toString());}catch(Exception e){}  //有功功率
 			    try{map.put("ReactivePower", soap.getProperty("ReactivePower").toString());}catch(Exception e){}  //无功功率
 			    try{map.put("PowerRateC", soap.getProperty("PowerRateC").toString());}catch(Exception e){}  //功率因数
-			    try{map.put("Electricity", soap.getProperty("Electricity").toString());}catch(Exception e){}  //总用电量，电表读数
+			    try{map.put("Eletricity", soap.getProperty("Electricity").toString());}catch(Exception e){}  //总用电量，电表读数
 			    try{map.put("ElecDay", soap.getProperty("ElecDay").toString());}catch(Exception e){}      //当日已用用电量
 			    try{map.put("ElecMonth", soap.getProperty("ElecMonth").toString());}catch(Exception e){}      //当月已用用电量
 

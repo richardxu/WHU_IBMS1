@@ -37,24 +37,20 @@
 				android:layout_marginRight="8dip"
 				android:text="返回"/>
 		</LinearLayout>
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="50dip"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:text="资费记录"/>
-   <TextView 
-       android:layout_width="wrap_content"
-       android:layout_height="fill_parent"
-       android:text="充值缴费"
-       android:textColor="@color/white"
-       android:textSize="15sp"
-       android:id="@+id/tx_recharge"
-       android:gravity="center"
-       android:layout_marginRight="5dip"/>
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="50dip"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:gravity="center"
+			android:text="资费记录"/>
+		<View
+			android:layout_height="match_parent"
+			android:layout_width="55dip"
+			/>
     </LinearLayout>
     
 	  <!-- 加载中。。和加载失败 -->

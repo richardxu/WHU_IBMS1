@@ -8,9 +8,10 @@ android {
         applicationId "com.suntrans.gsu"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.1.0"
+        versionCode 6
+        versionName "1.1.5"
     }
+
 
     buildTypes {
         release {
@@ -21,12 +22,9 @@ android {
 }
 
 dependencies {
+    compile fileTree(dir:'libs',include:'*.jar')
     compile project(':library')
     compile 'com.android.support:support-v4:23.1.1'
-    compile files('libs/graphview-3.1.jar')
-    compile files('libs/jdom.jar')
-    compile files('libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar')
-    compile files('libs/pinyin4j-2.5.0.jar')
     compile 'com.android.support:recyclerview-v7:23.3.0'
     compile 'com.android.support:appcompat-v7:23.3.0'
 }

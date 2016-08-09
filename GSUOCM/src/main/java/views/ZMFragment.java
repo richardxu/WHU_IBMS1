@@ -4,6 +4,7 @@ package views;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Vector;
 
 import org.ksoap2.serialization.SoapObject;
 
@@ -70,7 +71,7 @@ public class ZMFragment extends Fragment{
 	private boolean IfRefreshOn=false;   //是否开启了刷新线程
 	private SoapObject result=null;
 	private final String[] Status_description=new String[]{"正常","恶性负载","电表锁定","等待"};
-	private ArrayList<Map<String,String>> data=new ArrayList<>();   //页面需要显示的信息
+	private Vector<Map<String,String>> data=new Vector<>();   //页面需要显示的信息
 	private ArrayList<Map<String,String>> datalist_userinfo=new ArrayList<Map<String,String>>();  //解析到的学生信息
 	private ArrayList<Map<String,String>> datalist_channel=new ArrayList<Map<String,String>>();   //解析到的用电状态
 	private ArrayList<Map<String,String>> datalist_room=new ArrayList<Map<String,String>>();   //解析到的宿舍信息
@@ -333,7 +334,7 @@ public class ZMFragment extends Fragment{
 			IfRefreshOn=true;
 			while(IfRefresh) {
 				try {
-					Thread.sleep(3000);   //延时3s
+					Thread.sleep(2000);   //延时2s
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -348,9 +349,8 @@ public class ZMFragment extends Fragment{
 						result = soap.Inquiry_Channel_RoomID(RoomID, AccountType);
 						datalist_channel = jiexi.inquiry_channel(result);    //获取电表状态
 						map_channel = datalist_channel.get(0);
-						synchronized (data) {
-							DataInit();
-						}
+						DataInit();
+
 						Message msg = new Message();
 						msg.what = 1;    //代表成功
 						handler1.sendMessage(msg);
@@ -540,6 +540,9 @@ public class ZMFragment extends Fragment{
 				viewholder.image.setImageBitmap(bmp);
 				viewholder.name.setText(map.get("Name"));
 				viewholder.state.setState(map.get("Value").equals("1"));   //State=1则代表打开
+				if(Role.equals("3")){
+					viewholder.state.setEnabled(false);   //如果角色号是3，则不允许控制
+				}
 				if(!map.get("Title").equals("-1")){
 					viewholder.title.setText(map.get("Title"));   //设置标题
 					viewholder.title.setVisibility(View.VISIBLE);  //显示标题
@@ -550,9 +553,58 @@ public class ZMFragment extends Fragment{
 				viewholder.state.setOnChangeListener(new OnSwitchChangedListener(){
 					@Override
 					public void onSwitchChange(Switch switchView,final boolean isChecked) {   //设置开关点击监听
-						if(Role.equals("1")||Role.equals("2"))  //如果是学生，且无控制权限
+						if(Role.equals("1")||Role.equals("2"))  //如果是学生，则只允许打开
 						{
-							return;
+							if(isChecked)    //如果是要打开
+							{
+								new Thread(){
+									public void run(){
+										try{
+											String succ=soap.Insert_Order(UserID,"照明","2");   //发送打开命令
+											if(succ.equals("1")){
+												Looper.prepare();
+												Toast.makeText(getActivity().getApplicationContext(), "命令已发送！", Toast.LENGTH_SHORT).show();
+												Looper.loop();
+											}
+											else{
+												Looper.prepare();
+												Toast.makeText(getActivity().getApplicationContext(), "当前不能进行此操作！", Toast.LENGTH_SHORT).show();
+												Looper.loop();
+											}
+										}
+										catch (Exception e){
+											Looper.prepare();
+											Toast.makeText(getActivity(),"网络错误",Toast.LENGTH_SHORT).show();
+											Looper.loop();
+										}
+									}
+								}.start();
+							}
+							else   //如果是要关闭
+							{
+								new Thread(){
+									public void run(){
+										try{
+											String succ=soap.Insert_Order(UserID,"照明","3");   //发送关闭命令
+											if(succ.equals("1")){
+												Looper.prepare();
+												Toast.makeText(getActivity().getApplicationContext(), "命令已发送！", Toast.LENGTH_SHORT).show();
+												Looper.loop();
+											}
+											else{
+												Looper.prepare();
+												Toast.makeText(getActivity().getApplicationContext(), "当前不能进行此操作！", Toast.LENGTH_SHORT).show();
+												Looper.loop();
+											}
+										}
+										catch (Exception e){
+											Looper.prepare();
+											Toast.makeText(getActivity(),"网络错误",Toast.LENGTH_SHORT).show();
+											Looper.loop();
+										}
+									}
+								}.start();
+							}
 						}
 						else //如果有权限，或者用户是管理员，则提示是否进行控制
 						{

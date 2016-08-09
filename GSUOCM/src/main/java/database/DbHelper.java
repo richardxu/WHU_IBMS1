@@ -37,7 +37,8 @@ public class DbHelper extends SQLiteOpenHelper {
 				+ "Building TEXT,"//楼栋 
 				+ "Unit TEXT,"   //单元 
 				+ "Floor TEXT,"   //楼层
-				+ "RoomNum TEXT);" ;  //宿舍号 
+				+ "RoomNum TEXT,"    //宿舍号
+				+ "RoomType TEXT);" ;  //宿舍类型
 		db.execSQL(sql2);    //创建房间表
 		
 		String sql3 = " create table  student_tb ( SID INTEGER primary key autoincrement,"  //房间ID 唯一标示通道 ，自增长

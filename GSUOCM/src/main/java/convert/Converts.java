@@ -2,9 +2,14 @@ package convert;
 
 import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
+import java.util.Enumeration;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -17,6 +22,7 @@ import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -159,7 +165,7 @@ public abstract class Converts {
 	   }  
 	   /** 
 	   * 将指定字符串src，以每两个字符分割转换为16进制形式 如："2B44EFD9" --> byte[]{0x2B, 0x44, 0xEF, 0xD9} 
-	   * @param src String 
+	   * @param s String
 	   * @return byte[] 
 	   */  
 	   public static byte[] HexString2Bytes(String s) {  
@@ -211,7 +217,7 @@ public abstract class Converts {
 	   
 
 	   //设置图片圆角
-public static Bitmap toRoundCorner(Bitmap bitmap, int pixels) {  
+	public static Bitmap toRoundCorner(Bitmap bitmap, int pixels) {
         Bitmap output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Config.ARGB_8888);  
         Canvas canvas = new Canvas(output);  
         final int color = 0xff424242;  
@@ -245,4 +251,35 @@ public static Bitmap toRoundCorner(Bitmap bitmap, int pixels) {
 		}
 		win.setAttributes(winParams);
 	}
+
+	//获取ipv6地址
+/*	public static String getLocalIpAddress() {
+		try {
+			for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
+				NetworkInterface intf = en.nextElement();
+				for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+					InetAddress inetAddress = enumIpAddr.nextElement();
+					if (!inetAddress.isLoopbackAddress()) {
+						return inetAddress.getHostAddress().toString();
+					}
+				}
+			}
+		} catch (SocketException ex) {
+			Log.e("IPAddr", ex.toString());
+		}
+		return null;
+	}*/
+	public static String getLocalIPAddress() throws SocketException{
+		for(Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();en.hasMoreElements();){
+			NetworkInterface intf = en.nextElement();
+			for(Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();){
+				InetAddress inetAddress = enumIpAddr.nextElement();
+				if(!inetAddress.isLoopbackAddress() && (inetAddress instanceof Inet4Address)){
+					return inetAddress.getHostAddress().toString();
+				}
+			}
+		}
+		return "null";
+	}
+
 }
